@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PLogo from '../../assets/images/PokemonLogo.png';
+import UserLogo from '../../assets/images/avatar-de-usuario.png';
 
 const Header: React.FC = () => {
-    const [click, setClick] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const handleClick = () => {
-        setClick(!click);
+    const handleMenuToggle = () => {
+        setIsMenuOpen(!isMenuOpen);
     };
 
     return (
@@ -25,21 +26,19 @@ const Header: React.FC = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/store" className="text-white hover:text-gray-300">
-                                Store
-                            </Link>
+                            <img
+                                src={UserLogo}
+                                alt=""
+                                onClick={handleMenuToggle}
+                                className="cursor-pointer"
+                            />
+                            {isMenuOpen && (
+                                <ul className="absolute top-12 right-0 bg-white text-gray-800 rounded-md shadow-md">
+                                    <li className="px-4 py-2">Cerrar Sesión</li>
+                                </ul>
+                            )}
                         </li>
                     </ul>
-                    <div
-                        className="ml-4 cursor-pointer text-white hover:text-gray-300"
-                        onClick={handleClick}
-                    >
-                        {click ? (
-                            <i className="fas fa-times"></i>
-                        ) : (
-                            <i className="fas fa-bars"></i>
-                        )}
-                    </div>
                 </div>
             </nav>
         </header>

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 
+
+
 import Header from "../../components/Header";
 import Card from "../../components/Card";
 import Footer from "../../components/Footer";
@@ -17,7 +19,6 @@ const Home: React.FC = () => {
 
 
     async function fetchPokemons(Url: string = URL) {
-        console.log("Click");
 
         try {
             const { pokemonData, nextPage, prevPage } = await getPokemons(Url);
@@ -35,24 +36,12 @@ const Home: React.FC = () => {
     }, []);
 
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const handleOpenModal = () => {
-        console.log("Click Modal");
-
-        setIsModalOpen(true);
-    };
-
-    const handleCloseModal = () => {
-        setIsModalOpen(false);
-    };
-
-
 
     return (
         <>
             <Header />
             <section className="home">
+
                 <h1 className="home-heading">Pick your Pokemon</h1>
                 <div className="home-container">
                     {pokemons?.map((pokeCard: Pokemon, index: number) => {
@@ -60,9 +49,6 @@ const Home: React.FC = () => {
                             <Card
                                 {...pokeCard}
                                 key={index}
-                                handleOpenModal={handleOpenModal}
-                                handleCloseModal={handleCloseModal}
-                                isModalOpen={isModalOpen}
                             />
                         );
                     })}

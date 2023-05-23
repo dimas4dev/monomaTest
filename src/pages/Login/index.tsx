@@ -28,14 +28,9 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
         try {
             const response = await fetch('http://localhost:3000/users');
             const users = await response.json();
-
-
             const user = users.find((u: any) => u.username === emailValue && u.password === passwordValue);
 
-            console.log(user);
-
             if (user) {
-                // Inicio de sesión exitoso
                 setError('');
                 onLogin();
             } else {
