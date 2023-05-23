@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM, { createPortal } from "react-dom";
+import { createPortal } from "react-dom";
 
 interface ModalProps {
     isOpen: boolean;

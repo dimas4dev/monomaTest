@@ -21,7 +21,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
         setPasswordValue(value);
     };
 
-    const [error, setError] = useState('');
+    const [errorGeneral, setError] = useState('');
 
     const handleLogin = async (event: React.FormEvent) => {
         event.preventDefault();
@@ -37,7 +37,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                 setError('Invalid username or password');
             }
         } catch (error) {
-            setError('Error occurred during login');
+            setError(`Error occurred during login ${errorGeneral}`);
         }
     };
 
@@ -59,7 +59,7 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
                         placeholder="Ingresa tu Password"
                         label="Password"
                     />
-                    <Button className="p-2 border border-gray-300 rounded-r focus:outline-none" type="submit" onClick={handleLogin} >Ingresar</Button>
+                    <Button className="p-2 border border-gray-300 rounded-r focus:outline-none" type="submit">Ingresar</Button>
                 </form>
 
 

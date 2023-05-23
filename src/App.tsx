@@ -12,10 +12,6 @@ const App: React.FC = () => {
     setIsLoggedIn(true);
   };
 
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-  };
-
   const AppRoutes = () => {
     const routes = useRoutes([
       { path: '/', element: <Home /> },

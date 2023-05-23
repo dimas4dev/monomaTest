@@ -10,10 +10,7 @@ interface CardProps {
     height: number;
     weight: number;
     sprites: { front_default: string };
-    key: number
-    isModalOpen: boolean;
-    handleOpenModal: () => void;
-    handleCloseModal: () => void;
+
 }
 
 const Card: React.FC<CardProps> = ({
@@ -23,6 +20,7 @@ const Card: React.FC<CardProps> = ({
     height,
     weight,
     sprites,
+
 }) => {
 
     const typePokemon = types[0].type.name;
