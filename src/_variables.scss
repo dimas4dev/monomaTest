@@ -1,0 +1,164 @@
+//Global color variables
+$primary_color: #ffd745;
+$secondary_color: #bfa134;
+$tertiary_color: #e6c13e;
+$font_color: black;
+$background: white;
+$hover_color: #bfa134;
+$hover_font_color: #000000;
+
+//Card color variables}
+$saturation_card: 82;
+$ilumination_card: 60;
+$color_bug: linear-gradient(
+ to bottom,
+ #2d7654,
+ #318c62,
+ #35a270,
+ #39b97e,
+ #3dd18c
+);
+$color_dark: linear-gradient(
+ to bottom,
+ #363d3a,
+ #4e5854,
+ #68756f,
+ #83938c,
+ #9fb2aa
+);
+$color_dragon: linear-gradient(
+ to bottom,
+ #d43032,
+ #d44444,
+ #d45655,
+ #d16565,
+ #ce7475
+);
+$color_electric: linear-gradient(
+ to bottom,
+ #e3de2c,
+ #e3e042,
+ #e3e353,
+ #e3e563,
+ #e4e772
+);
+$color_fairy: linear-gradient(
+ to top,
+ #e32c9e,
+ #e853ad,
+ #ec70ba,
+ #f08ac8,
+ #f3a2d4
+);
+$color_fighting: linear-gradient(
+ to top,
+ #e38e2c,
+ #df9239,
+ #dc9646,
+ #d89a51,
+ #d49d5d
+);
+$color_fire: linear-gradient(
+ to top,
+ #e04034,
+ #e14d31,
+ #e2592f,
+ #e3642d,
+ #e36e2c
+);
+$color_flying: linear-gradient(
+ to top,
+ #34a4e0,
+ #63afde,
+ #85bbdc,
+ #a3c6da,
+ #c0d0d9
+);
+$color_ghost: linear-gradient(
+ to top,
+ #cc34e0,
+ #cd5bdc,
+ #cd77d8,
+ #cc90d3,
+ #caa7ce
+);
+$color_grass: linear-gradient(
+ to top,
+ #34e06d,
+ #58e383,
+ #74e597,
+ #8ce7a9,
+ #a4e8bb
+);
+$color_ground: linear-gradient(
+ to top,
+ #e0a434,
+ #dfa842,
+ #deac4e,
+ #deb05a,
+ #ddb466
+);
+$color_ice: linear-gradient(
+ to bottom,
+ #34e0d6,
+ #63e2da,
+ #83e3dd,
+ #9de5e0,
+ #b5e6e3
+);
+$color_normal: linear-gradient(
+ to top,
+ #687776,
+ #7f8e8d,
+ #97a6a5,
+ #b0bfbe,
+ #c9d8d7
+);
+$color_poison: linear-gradient(
+ to top,
+ #894572,
+ #8d4f78,
+ #91597e,
+ #946283,
+ #986c89
+);
+$color_psychic: linear-gradient(
+ to bottom,
+ #d80f99,
+ #d5349f,
+ #d349a4,
+ #d05aa9,
+ #cd68ad
+);
+$color_rock: linear-gradient(
+ to top,
+ #ac6f31,
+ #a16c36,
+ #96693b,
+ #8c6640,
+ #816345
+);
+$color_steel: linear-gradient(
+ to top,
+ #8b857e,
+ #a29c95,
+ #b9b3ad,
+ #d1cbc5,
+ #e9e4de
+);
+$color_water: linear-gradient(
+ to bottom,
+ #4073bf,
+ #5382c9,
+ #6691d4,
+ #78a0de,
+ #8ab0e8
+);
+$color_default: linear-gradient(
+ to top,
+ #bf4063,
+ #b04a65,
+ #a05266,
+ #905867,
+ #7f5d66
+);

@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+
+import { BrowserRouter, useRoutes } from 'react-router-dom';
+
 import Login from './pages/Login';
+import Home from './pages/Home';
 
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -12,14 +16,21 @@ const App: React.FC = () => {
     setIsLoggedIn(false);
   };
 
+  const AppRoutes = () => {
+    const routes = useRoutes([
+      { path: '/', element: <Home /> },
+
+    ]);
+
+    return routes;
+  }
+
   return (
     <div>
       {isLoggedIn ? (
-        <div>
-          <h1>Welcome!</h1>
-          <button onClick={handleLogout}>Logout</button>
-          {/* Aquí mostrar el contenido protegido para usuarios autenticados */}
-        </div>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
       ) : (
         <Login onLogin={handleLogin} />
       )}

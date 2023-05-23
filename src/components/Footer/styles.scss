@@ -1,0 +1,22 @@
+.footer {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ padding: 1.4rem 0;
+ background-color: #ffd745;
+
+ &-paragraph--description {
+  margin: 4px;
+  font-family: "Blinker", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+ }
+ &-paragraph--date {
+  margin: 4px;
+  font-family: "Enriqueta", serif;
+  font-size: 1.6rem;
+ }
+}
